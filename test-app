@@ -1,0 +1,321 @@
+ <div class="container">
+
+            <form>
+
+            <h2>Yard Inventory</h2>
+                <div class="form-row">
+                  <div class="form-group col-md-8">
+                    <label for="tagNumber">Tag Number</label>
+                    <input id="tagNumber" class="form-control" name="tagNumber" ngModel>
+                  </div>
+                  <div class="form-group col-md-4">
+                        <label for="location">Location</label>
+                        <select class="form-control" id="location" name="location">
+                                <option selected>Select an option</option>
+                                <option>Row 1</option>
+                                <option>Row 2</option>
+                                <option>Row 3</option>
+                                <option>Row 4</option>
+                                <option>Row 5</option>
+                                <option>Row 6</option>
+                                <option>Row 7</option>
+                                <option>Row 8</option>
+                                <option>Row 9</option>
+                                <option>Row 10</option>
+                                <option>Shelf 1</option>
+                                <option>Shelf 2</option>
+                                <option>Shelf 3</option>
+                                <option>Shelf 4</option>
+                                <option>Shelf 5</option>
+                                <option>Shelf 6</option>
+                                <option>Shop</option>
+                                <option>Kiln 1</option>
+                                <option>Kiln 2</option>
+                                <option>Kiln 3</option>
+                                <option>Shop prep</option>
+                                <option>Shop HMD</option>
+                                <option>Shop K2</option>
+                                <option>Handwork</option>
+                                <option>Finish</option>
+                                <option>Stain</option>
+                                <option>Packed</option>
+                                <option>Yard 1</option>
+                                <option>Yard 2</option>
+                                <option>Yard 3</option>
+                                <option>Yard 4</option>
+                        </select>
+                  </div>
+                </div>
+                        <div class="form-row">
+                          <div class="form-group col">
+                                <label for="dateOrigin">Date Origin</label>
+                                <input type="date" id="dateOrigin" name="dateOrigin"
+                                          class="form-control" />
+                          </div>
+                          <div class="form-group col">
+                                <label for="dateChanged">Date Changed</label>
+                                <input type="date" id="dateChanged" name="dateChanged"
+                                          class="form-control" />
+                          </div>
+                        </div>
+
+                        <div class="form-row">
+                                <div class="form-group col">
+                                <label for="job">Job</label>
+                                 <input id="job" class="form-control" name="job">
+                                </div>
+                                <div class="form-group col-md-3">
+                                        <label for="processing">Processing</label>
+                                        <select class="form-control" id="processing" name="processing">
+                                                <option>Select option</option>
+                                                <option>HMD</option>
+                                                <option>K2</option>
+                                                <option>Handwork</option>
+                                                <option>Finish</option>
+                                                <option>Stain</option>
+                                                <option>Packing</option>
+                                                <option>Storage</option>
+                                        </select>
+                                </div>
+                              <div class="form-group col-md-3">
+                                    <label for="species">Species</label>
+                                        <select class="form-control" id="species" name="species">
+                                                <option>Select option</option>
+                                                <option>DF</option>
+                                                <option>WRC</option>
+                                                <option>AYC</option>
+                                                <option>HEM</option>
+                                                <option>GL-DF</option>
+                                                <option>GL-SP</option>
+                                        </select>
+                                  </div>
+                                </div>
+
+                                <div class="form-row">
+                                        <div class="form-group col">
+                                                <label for="width">Width</label>
+                                                <input id="width" class="form-control" name="width" placeholder="in">
+                                        </div>
+                                        <div class="form-group col">
+                                                <label for="height">Height</label>
+                                                <input id="height" class="form-control" name="height" placeholder="in">
+                                        </div>
+                                        <div class="form-group col">
+                                                <label for="length">Length</label>
+                                                <input id="length" class="form-control" name="length" placeholder="ft">
+                                              </div>
+                                      </div>
+       
+                                      
+
+                                          <div class="form-row">
+                                                <div class="form-group col">
+                                                <fieldset class="form-group">
+                                                        <div class="row">
+                                                          <legend class="form-group col-form-label col-sm-2 pt-0">Fiber</legend>
+                                                          <div class="form-group col-sm-10">
+                                                            <div class="form-check">
+                                                              <input class="form-check-input" type="radio" name="fiber" id="fiber1" value="option1" checked>
+                                                              <label class="form-check-label" for="fiber1">
+                                                                FOHC
+                                                              </label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                              <input class="form-check-input" type="radio" name="fiber" id="fiber2" value="option2">
+                                                              <label class="form-check-label" for="fiber2">
+                                                                BH
+                                                              </label>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </fieldset>
+                                                    </div>
+                                                <div class="col">
+                                                        <fieldset class="form-group">
+                                                                <div class="row">
+                                                                  <legend class="form-group col-form-label col-sm-2 pt-0">Grain</legend>
+                                                                  <div class="col-sm-10">
+                                                                    <div class="form-check">
+                                                                      <input class="form-check-input" type="radio" name="grain" id="grain1" value="option1" checked>
+                                                                      <label class="form-check-label" for="grain1">
+                                                                        Dense
+                                                                      </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                      <input class="form-check-input" type="radio" name="grain" id="grain2" value="option2">
+                                                                      <label class="form-check-label" for="grain2">
+                                                                        Corse
+                                                                      </label>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </fieldset>
+                                                </div>
+                                              </div>
+
+                                              <div class="form-row">
+                                                    <div class="form-group col">
+                                                            <label for="kiln">Kiln</label>
+                                                            <select class="form-control" id="kiln" name="kiln">
+                                                                    <option>Select option</option>
+                                                                    <option>Yes</option>
+                                                                    <option>No</option>
+                                                            </select>
+                                                    </div>
+                                                    <div class="form-group col">
+                                                            <label for="moistureContent">Moisture Content</label>
+                                                            <input id="moistureContent" class="form-control" name="moistureContent">
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="form-row">
+                                                        <div class="form-group col">
+                                                        <fieldset class="form-group">
+                                                                <div class="row">
+                                                                  <legend class="col-form-label col-sm-2 pt-0">Checks</legend>
+                                                                  <div class="col-sm-10">
+                                                                    <div class="form-check">
+                                                                      <input class="form-check-input" type="radio" name="checks" id="checks1" value="option1" checked>
+                                                                      <label class="form-check-label" for="checks1">
+                                                                        Small
+                                                                      </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                      <input class="form-check-input" type="radio" name="checks" id="checks2" value="option2">
+                                                                      <label class="form-check-label" for="checks2">
+                                                                        Medium
+                                                                      </label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                            <input class="form-check-input" type="radio" name="checks" id="checks3" value="option3">
+                                                                            <label class="form-check-label" for="checks3">
+                                                                              Large
+                                                                            </label>
+                                                                          </div>
+                                                                  </div>
+                                                                </div>
+                                                              </fieldset>
+                                                            </div>
+                                                        <div class="form-group col">
+                                                                <fieldset class="form-group">
+                                                                        <div class="row">
+                                                                          <legend class="col-form-label col-sm-2 pt-0">Knots</legend>
+                                                                          <div class="col-sm-10">
+                                                                            <div class="form-check">
+                                                                              <input class="form-check-input" type="radio" name="knots" id="knots1" value="option1" checked>
+                                                                              <label class="form-check-label" for="knots1">
+                                                                                Small
+                                                                              </label>
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                              <input class="form-check-input" type="radio" name="knots" id="knots2" value="option2">
+                                                                              <label class="form-check-label" for="knots2">
+                                                                                Medium
+                                                                              </label>
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                                    <input class="form-check-input" type="radio" name="knots" id="knots3" value="option3">
+                                                                                    <label class="form-check-label" for="knots3">
+                                                                                      Large
+                                                                                    </label>
+                                                                                  </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </fieldset>
+                                                        </div>
+                                                        <div class="form-group col">
+                                                                <fieldset class="form-group">
+                                                                        <div class="row">
+                                                                          <legend class="col-form-label col-sm-2 pt-0">Twist</legend>
+                                                                          <div class="col-sm-10">
+                                                                            <div class="form-check">
+                                                                              <input class="form-check-input" type="radio" name="twist" id="twist1" value="option1" checked>
+                                                                              <label class="form-check-label" for="twist1">
+                                                                                None
+                                                                              </label>
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                              <input class="form-check-input" type="radio" name="twist" id="twist2" value="option2">
+                                                                              <label class="form-check-label" for="twist2">
+                                                                                Little
+                                                                              </label>
+                                                                            </div>
+                                                                            <div class="form-check">
+                                                                                    <input class="form-check-input" type="radio" name="twist" id="twist3" value="option3">
+                                                                                    <label class="form-check-label" for="twist3">
+                                                                                      Bad
+                                                                                    </label>
+                                                                                  </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </fieldset>
+                                                        </div>
+                                                      </div>
+
+                                                      <div class="form-row">
+                                                            <div class="form-group col">
+                                                                    <label for="over">Over</label>
+                                                                    <select class="form-control" id="over" name="over">
+                                                                            <option>Select option</option>
+                                                                            <option>1/8</option>
+                                                                            <option>1/4</option>
+                                                                            <option>3/8</option>
+                                                                            <option>1/2</option>
+                                                                            <option>5/8</option>
+                                                                            <option>3/4</option>
+                                                                            <option>7/8</option>
+                                                                            <option>1</option>
+                                                                          </select>
+                                                            </div>
+                                                            <div class="form-group col">
+                                                                    <label for="under">Under</label>
+                                                                    <select class="form-control" id="under" name="under">
+                                                                            <option>Select option</option>
+                                                                            <option>1/8</option>
+                                                                            <option>1/4</option>
+                                                                            <option>3/8</option>
+                                                                            <option>1/2</option>
+                                                                            <option>5/8</option>
+                                                                            <option>3/4</option>
+                                                                            <option>7/8</option>
+                                                                            <option>1</option>
+                                                                  </select>
+                                                            </div>
+                                                          </div>
+
+                                                          <div class="form-row">
+                                                                <div class="form-group col">
+                                                                        <label for="reject">Reject</label>
+                                                                        <select class="form-control" id="reject" name="reject">
+                                                                                <option>Select option</option>
+                                                                                <option>Yes</option>
+                                                                                <option>No</option>
+                                                                              </select>
+                                                                </div>
+                                                                <div class="form-group col">
+                                                                        <label for="availability">Availability</label>
+                                                                        <select class="form-control" id="availability" name="availability">
+                                                                                <option>Select option</option>
+                                                                                <option>Available</option>
+                                                                                <option>Used</option>
+                                                                      </select>
+                                                                </div>
+                                                                <div class="form-group col">
+                                                                        <label for="liftNumber">Lift Number</label>
+                                                                        <input id="liftNumber" class="form-control" name="liftNumber">
+                                                                      </div>
+                                                                 <div class="form-group col">
+                                                                            <label for="lastEntryBy">Last Entry By</label>
+                                                                            <input id="lastEntryBy" class="form-control" name="lastEntryBy">
+                                                                          </div>
+                                                              </div>
+    
+        
+                  <div class="form-group">
+                        <label for="notes">Notes</label>
+                        <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+                      </div>
+    
+        <button class="btn btn-primary">Submit</button>
+    </form>
+</div>
